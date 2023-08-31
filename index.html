@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <h1 class="text-center">Image Converter</h1>
+      <form action="" id="myform">
+        <div class="form-group">
+          <input type="text" placeholder="URL" id="url" class="form-control" />
+        </div>
+        <label for="image">Select Image:</label>
+        <div class="form-group">
+          <input type="file" id="image" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="format">Format:</label>
+          <select class="form-control" name="format" id="format">
+            <option value="png" selected>png</option>
+            <option value="jpg">jpg</option>
+            <option value="gif">gif</option>
+            <option value="tiff">tiff</option>
+            <option value="pdf">pdf</option>
+            <option value="bmp">bmp</option>
+            <option value="wmf">wmf</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-danger btn-block">Convert Image</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/browser-image-converter@0.1.1/dist/index.min.js"></script>
+  <script src="script.js"></script>
+</html>
